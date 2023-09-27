@@ -6,54 +6,153 @@
     <title>registration</title>
    
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+   
     
-    
-    img{
-        width: 30%;
-      border-radius: 50px 0px 0px 50px;
-       
+    *{
+        font-family: 'Roboto';   
+        margin: o;
+        padding: o;
+        box-sizing: border-box;
+       }
+
+    body{
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        background-color: black;
+   
     }
     .container{
-        font-family: 'Roboto';
+        display: flex;
+        color: white;
+        height: 80%;
+        position: fixed; 
       
        
     }
-
     .box{
-        width: 30%;
-        background-color: gray;
-        border-radius: 0px 50px 50px 0px;
+        width: 100%;
+        background-color: rgb(58, 58, 58);
+        border-radius: 0px 20px 20px 0px;
+        padding-left: 40px;
+    }
+    h6{
+        line-height: 15px;
+        font-weight: lighter;
+    }
+    h1{
+        font-weight: 400;
+        height: 20px;
+        font-size:medium;
        
-
     }
     
+    .lorem{
+        font-size: smaller; 
+        margin-bottom: -20px; 
+    }
+   
+    img{
+        width: 20%;
+        height: 100%;
+        border-radius: 20px 0px 0px 20px;
+    }
+   span{
+    color: rgb(56, 54, 196);
+    background-color: rgb(58, 58, 58);
+    border: none;
+    font-size: xx-small;
+   }
+   
+   td{
+    padding-bottom: 10px;
+   border: 1px solid rgb(109, 109, 109);
+   
+   }
+  .yes{
+    border-color: rgb(114, 114, 250);
+  }
+   table{
+    border-spacing: 15px;  
+   }
+ tr td{
+    padding-right: 300px;
+   
+ }
+  
+   input{
+    border:none;
+    background-color: rgb(58, 58, 58);
+    color: rgb(255, 255, 255); 
+    font-size: xx-small;
+    
+   }
+   .button{
+    background-color: rgb(83, 83, 245);
+    color:white;
+     border:none;
+     font-size:small;
+     padding-left: 20px;
+     padding-right: 20px;
+     margin-top: 20px;
+     margin-bottom: 30px;
+     font-weight: lighter;
+   }
+   .checkbox{
+   font-weight: lighter;
+   margin-top: 5px;
+   font-size:x-small;
+   }
+    .sing{
+        padding-top: 10px;
+        font-weight:100;
+        font-size: smaller;
+        border-top: 1px solid grey;
+        margin-right: 130px;
+        font-size: xx-small;
+    }
     </style>
 </head>
 <body>
   
     <div class="container">
-    <div><img src="photo.png" alt="">
-        <div class="  box">
+        <img src="photo.png" alt="">
+   
+      <div class="box">
             <div><h1>Set  up your account</h1></div>
-            <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry. </div>
-           <div class="box1">
-            <form>
-                <div><input type="text" value="VJ"></div>
-                <div><input type="text" value="Rathod"></div>
-               <div><input type="tel" placeholder="Mobile Number"></div>
-                <div><input type="email" placeholder="Email Address"></div>
-                <div><input type="password" placeholder="Password"></div>
-                <div><input type="password" placeholder="Confirm Password"></div>
-                <div><input type="checkbox" placeholder="Confirm Password"> <label for="checkbox">Confirm Password</label></div>
-        
-               <div> <button>Continue</button></div>
-               <div> Already have an account? <button>Sing in &#129106;</button></div>   
+             <div class="lorem"><h6>Lorem Ipsum is simply dummy text of the printing and typesetting <br> industry. Lorem Ipsum has been the industry. </h6> </div>
+            <div class="form">
+              <form>
+               <table>
+                <tr>
+                    <td> <div><input type="text" value="VJ"></div></td>
+                </tr>
+                <tr>
+                    <td class="yes"><div ><input type="text" value="Rathod"></div></td>
+                </tr>
+                <tr>
+                    <td> <div><input type="tel" placeholder="Mobile Number"></div></td>
+                </tr>
+                <tr>
+                    <td><div><input type="email" placeholder="Email Address"></div></td>
+                </tr>
+                <tr>
+                    <td><div><input type="password" placeholder="Password"></div></td>
+                </tr>
+                <tr>
+                    <td><div><input type="password" placeholder="Confirm Password"></div></td>
+                </tr>
+              </table>
+                <div class="checkbox"><input type="checkbox" placeholder="Confirm Password"><la for="checkbox">Confirm Password</la</div>
+               <div><button class="button" >Continue</button></div>
+               <div class="sing"> Already have an account? <button style="background-color: rgb(58, 58, 58); border: none;"> <span> Sing in &#129106; </span></button></div>   
+           
             </form>
-           </div>
-    </div>
+
+     </div>
     
-</div>
-</div>
+    </div>
+
 </body>
 </html>
