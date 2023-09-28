@@ -7,22 +7,18 @@
     <title>Registration</title>
     <style>
         * {
-            box-sizing: border-box;
-            
+            box-sizing: border-box;    
         }
 
         body {
-            background-color: #08080B;
-            
-
+            background-color: #08080B;    
         }
 
         .container {
-            height: 1024px;
             display: flex;
             justify-content: center;
             border-radius: 25px;
-            margin-top: 10%;
+    
         }
 
         .photo {
@@ -82,11 +78,10 @@
             width: 70%;
             height: 40px;
            font-size: 10px;
-           border: 1px solid #3D3D3D
+           border: 1px solid #3D3D3D;
+           margin-bottom: 10px;
         }
-        #svg{
-            padding-top: 4px;
-        }
+       
     </style>
 </head>
 
@@ -109,39 +104,10 @@
                 <div> <input class="input" type="password" placeholder="Password"></div>
                 <div><input class="input" type="password" placeholder="Confirm Password"></div>
             </div>
-            <div id="check">
-                <svg id="svg" width="32" height="32" viewBox="0 0 32 32" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g filter="url(#filter0_d_2_75)">
-                        <rect x="4" width="24" height="24" rx="4" fill="#242424" />
-                        <rect x="4.5" y="0.5" width="23" height="23" rx="3.5" stroke="#3D3D3D" />
-                    </g>
-                    <defs>
-                        <filter id="filter0_d_2_75" x="0" y="0" width="32" height="32" filterUnits="userSpaceOnUse"
-                            color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                            <feColorMatrix in="SourceAlpha" type="matrix"
-                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                            <feOffset dy="4" />
-                            <feGaussianBlur stdDeviation="2" />
-                            <feComposite in2="hardAlpha" operator="out" />
-                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_75" />
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_75" result="shape" />
-                        </filter>
-                    </defs>
-                </svg>
-                <label for="Confirm Password">Confirm Password</label>
+            <div><img src="Rectangle 1581.svg" alt=""><label  for="Confirm Password">Confirm Password </label>
             </div>
             <div><button>Continue</button></div>
-            <div class="svg">Already have an account? Sign in 
-                <svg id="svg" width="18" height="18" viewBox="0 0 18 18"
-                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 9H15" stroke="#4B72C2" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path d="M9.75 3.75L15 9L9.75 14.25" stroke="#4B72C2" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg></div>
+            <div class="svg">Already have an account? Sign in <img src="akar-icons_arrow-right.svg" alt=""></div>
 
         </div>
     </div>
