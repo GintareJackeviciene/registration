@@ -1,158 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>registration</title>
-   
+    <title>Registration</title>
     <style>
-   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
-   
-    
-    *{
-        font-family: 'Roboto';   
-        margin: o;
-        padding: o;
-        box-sizing: border-box;
-       }
+        * {
+            box-sizing: border-box;
+            
+        }
 
-    body{
-        margin-top: 70px;
-        display: flex;
-        justify-content: center;
-        background-color: black;
-   
-    }
-    .container{
-        display: flex;
-        color: white;
-        height: 80%;
-        position: fixed; 
-      
-       
-    }
-    .box{
-        width: 100%;
-        background-color: rgb(58, 58, 58);
-        border-radius: 0px 20px 20px 0px;
-        padding-left: 40px;
-    }
-    h6{
-        line-height: 15px;
-        font-weight: lighter;
-    }
-    h1{
-        font-weight: 400;
-        height: 20px;
-        font-size:medium;
-       
-    }
-    
-    .lorem{
-        font-size: smaller; 
-        margin-bottom: -20px; 
-    }
-   
-    img{
-        width: 20%;
-        height: 100%;
-        border-radius: 20px 0px 0px 20px;
-    }
-   span{
-    color: rgb(56, 54, 196);
-    background-color: rgb(58, 58, 58);
-    border: none;
-    font-size: xx-small;
-   }
-   
-   td{
-    padding-bottom: 10px;
-   border: 1px solid rgb(109, 109, 109);
-   
-   }
-  .yes{
-    border-color: rgb(114, 114, 250);
-  }
-   table{
-    border-spacing: 15px;  
-   }
- tr td{
-    padding-right: 300px;
-   
- }
-  
-   input{
-    border:none;
-    background-color: rgb(58, 58, 58);
-    color: rgb(255, 255, 255); 
-    font-size: xx-small;
-    
-   }
-   .button{
-    background-color: rgb(83, 83, 245);
-    color:white;
-     border:none;
-     font-size:small;
-     padding-left: 20px;
-     padding-right: 20px;
-     margin-top: 20px;
-     margin-bottom: 30px;
-     font-weight: lighter;
-   }
-   .checkbox{
-   font-weight: lighter;
-   margin-top: 5px;
-   font-size:x-small;
-   }
-    .sing{
-        padding-top: 10px;
-        font-weight:100;
-        font-size: smaller;
-        border-top: 1px solid grey;
-        margin-right: 130px;
-        font-size: xx-small;
-    }
+        body {
+            background-color: #08080B;
+            
+
+        }
+
+        .container {
+            height: 1024px;
+            display: flex;
+            justify-content: center;
+            border-radius: 25px;
+            margin-top: 10%;
+        }
+
+        .photo {
+            width: 15%;
+            background: #131313 url(photo.png) no-repeat bottom left / cover;
+            height: 500px;
+            border-radius: 25px 0 0 25px;
+            
+        }
+
+        .form {
+            background-color: #242424;
+            height: 500px;
+            border-radius: 0 25px 25px 0;
+            color: white;
+            padding-left: 10%;
+            width: 50%;
+        }
+
+        .text p {
+            color: #7F7F7F;
+            font-size: 10px;
+            width: 45%;
+        }
+
+        .text2 input {
+
+            background-color: #242424;
+            color: white;
+        }
+
+        button {
+            background-color: #4B72C2;
+            border: none;
+            width: 20%;
+            height: 25px;
+            color: white;
+            font-size: 10px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        label {
+            color: #7F7F7F;
+            font-size: 10px;
+        }
+
+        .svg {
+            color: #7F7F7F;
+            padding-top: 20px;
+            font-size: 10px;
+            border-top: 1px solid rgb(112, 110, 110);
+            margin-top: 5px;
+        }
+
+        .input {
+            width: 70%;
+            height: 40px;
+           font-size: 10px;
+           border: 1px solid #3D3D3D
+        }
+        #svg{
+            padding-top: 4px;
+        }
     </style>
 </head>
+
 <body>
-  
     <div class="container">
-        <img src="photo.png" alt="">
-   
-      <div class="box">
-            <div><h1>Set  up your account</h1></div>
-             <div class="lorem"><h6>Lorem Ipsum is simply dummy text of the printing and typesetting <br> industry. Lorem Ipsum has been the industry. </h6> </div>
-            <div class="form">
-              <form>
-               <table>
-                <tr>
-                    <td> <div><input type="text" value="VJ"></div></td>
-                </tr>
-                <tr>
-                    <td class="yes"><div ><input type="text" value="Rathod"></div></td>
-                </tr>
-                <tr>
-                    <td> <div><input type="tel" placeholder="Mobile Number"></div></td>
-                </tr>
-                <tr>
-                    <td><div><input type="email" placeholder="Email Address"></div></td>
-                </tr>
-                <tr>
-                    <td><div><input type="password" placeholder="Password"></div></td>
-                </tr>
-                <tr>
-                    <td><div><input type="password" placeholder="Confirm Password"></div></td>
-                </tr>
-              </table>
-                <div class="checkbox"><input type="checkbox" placeholder="Confirm Password"><la for="checkbox">Confirm Password</la</div>
-               <div><button class="button" >Continue</button></div>
-               <div class="sing"> Already have an account? <button style="background-color: rgb(58, 58, 58); border: none;"> <span> Sing in &#129106; </span></button></div>   
-           
-            </form>
+        <div class="photo"></div>
 
-     </div>
-    
+        <div class="form">
+            <div class="text">
+                <h1> Set up your account </h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry. </p>
+            </div>
+
+            <div class="text2">
+                <div><input class="input" type="text" value="VJ"></div>
+                <div> <input class="input" type="text" value="Rathod"></div>
+                <div> <input class="input" type="tel" placeholder="Mobile Number"></div>
+                <div><input class="input" type="email" placeholder="Email Address"></div>
+                <div> <input class="input" type="password" placeholder="Password"></div>
+                <div><input class="input" type="password" placeholder="Confirm Password"></div>
+            </div>
+            <div id="check">
+                <svg id="svg" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_2_75)">
+                        <rect x="4" width="24" height="24" rx="4" fill="#242424" />
+                        <rect x="4.5" y="0.5" width="23" height="23" rx="3.5" stroke="#3D3D3D" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_d_2_75" x="0" y="0" width="32" height="32" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dy="4" />
+                            <feGaussianBlur stdDeviation="2" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_75" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_75" result="shape" />
+                        </filter>
+                    </defs>
+                </svg>
+                <label for="Confirm Password">Confirm Password</label>
+            </div>
+            <div><button>Continue</button></div>
+            <div class="svg">Already have an account? Sign in 
+                <svg id="svg" width="18" height="18" viewBox="0 0 18 18"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9H15" stroke="#4B72C2" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M9.75 3.75L15 9L9.75 14.25" stroke="#4B72C2" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg></div>
+
+        </div>
     </div>
-
 </body>
+
 </html>
